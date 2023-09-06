@@ -104,10 +104,7 @@ export default function RootLayout({
               </nav>
             </header>
 
-            {
-              // eslint-disable-next-line tailwindcss/no-custom-classname
-              <main className="content py-5 text-xl">{children}</main>
-            }
+            <main className="content py-5 text-xl">{children}</main>
 
             <footer className="border-t border-gray-300 py-8 text-center text-sm">
               © Copyright {new Date().getFullYear()} {AppConfig.title}. Made
