@@ -1,8 +1,7 @@
-import { Meta } from '@/components/layouts/meta.layout';
-import { MainTemplate } from '@/components/templates/main.template';
+import React from 'react';
 
-const About = () => (
-  <MainTemplate meta={<Meta title="Lorem ipsum" description="Lorem ipsum" />}>
+export const AboutPage = () => (
+  <>
     <p>
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione fuga
       recusandae quidem. Quaerat molestiae blanditiis doloremque possimus labore
@@ -15,7 +14,5 @@ const About = () => (
       voluptatibus distinctio recusandae autem esse explicabo molestias officia
       placeat, accusamus aut saepe.
     </p>
-  </MainTemplate>
+  </>
 );
-
-export default About;
