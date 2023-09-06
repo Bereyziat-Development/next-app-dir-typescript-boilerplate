@@ -59,6 +59,7 @@
         "simple-import-sort/exports": "error", // Export configuration for `eslint-plugin-simple-import-sort`
         "@typescript-eslint/no-unused-vars": "off",
         "unused-imports/no-unused-imports": "error",
+        "no-restricted-exports": 0,
         "unused-imports/no-unused-vars": [
           "error",
           { "argsIgnorePattern": "^_" }
@@ -73,7 +74,7 @@
           {
             "groups": [
               // Packages `react` related packages come first.
-              ["^react", "^@?\\w",  "^next", "^[a-z]"],
+              ["^react", "^@?\\w", "^next", "^[a-z]"],
               // component packages.
               ["^@/components"],
               // modules/container packages.
@@ -92,13 +93,9 @@
               ["^\\./(?=.*/)(?!/?$)", "^\\.(?!/?$)", "^\\./?$"],
               // Style imports.
               ["^.+\\.?(css)$"],
-              [
-                "^@/types"
-              ],
+              ["^@/types"],
               // other that didnt fit in
-              [
-                "^"
-              ]
+              ["^"]
             ]
           }
         ]
